@@ -138,7 +138,7 @@ def main(username, password):
     helper.login()
     helper.getInfo()
     res = helper.post()
-    if res['e'] == 0:
+    if res['e'] == '无涉疫':
         print('填报完成')
     else:
         raise Exception(res['m'])
